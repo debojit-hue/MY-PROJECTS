@@ -1,8 +1,11 @@
 #include <stdio.h>
+#include <conio.h>
+#include <windows.h>
 int b[3][3]={0};int i,j;
 void dis()
 {
-    printf('\n');
+    system("cls");
+    printf("\n");
     for(i=0;i<3;i++)
     {
         for (j=0;j<3;j++)
@@ -96,8 +99,9 @@ int main()
         w=cheak ();
         if (w==2) break;
     }  
+    dis();  
     if (w==1) printf("\nPlayer 1 wins!!! ");
     else if (w==2) printf ("\nPlayer 2 wins!!! ");
     else printf("\nDraw "); 
-    dis();  
+    getch();
 }
